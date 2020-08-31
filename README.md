@@ -30,7 +30,9 @@ This is where the main block of the BCI is implemented. The `main.m` script read
 - Presents the testing interface, which reads and processes data continuously, online.
 
 ## Pytorch
-This directory contains a Python script that executes a backwards propagation algorithm in Pytorch for a multilayer perceptron with:
+This directory contains a Python script (`python_nn.py`) that executes a backwards propagation algorithm in Pytorch for a multilayer perceptron with:
 - 2 input units
 - 8 hidden units
 - 2 output units
+
+It uses the data placed in `input_data` for training and stores the output data (weight and bias matrices) into `output_data`.
