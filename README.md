@@ -19,15 +19,15 @@ Software to control an IC ADS1299 through an Arduino NANO. It handles the startu
 This is where the main block of the BCI is implemented. The `main.m` script reads data transmitted by the Arduino and executes the complete test which consists of:
 
 1. Calibration stage
-- Presents the calibration interface.
-- Records eog data from vertical & horizontal channel and stores them into a file.
-- Processes the data to extract the features to train the NN (input & desired output).
+    - Presents the calibration interface.
+    - Records eog data from vertical & horizontal channel and stores them into a file.
+    - Processes the data to extract the features to train the NN (input & desired output).
 
 2. Training of the NN
-- Calls the Pytorch script that trains the network. 
+    - Calls the Pytorch script that trains the network. 
 
 3. Live test
-- Presents the testing interface, which reads and processes data continuously, online.
+    - Presents the testing interface, which reads and processes data continuously, online.
 
 ## Pytorch
 This directory contains a Python script (`python_nn.py`) that executes a backwards propagation algorithm in Pytorch for a multilayer perceptron with:
