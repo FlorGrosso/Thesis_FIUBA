@@ -1,8 +1,11 @@
 # Thesis_FIUBA
 
 "Eye tracking based on EOG signal processing"
+
 Instituto de Ingeniería Biomédica
+
 Universidad de Buenos Aires
+
 2020
 
 This repository contains the software for a BCI designed to control a virtual d-pad using EOG signals as input. The code is divided in 3 blocks: Arduino, Matlab and Pytorch.
